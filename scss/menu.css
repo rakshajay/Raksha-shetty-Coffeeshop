@@ -1,0 +1,121 @@
+.header__nav__bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1rem 0 1rem;
+  background-color: #fff0ed;
+}
+.header__nav-left {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 12vw;
+}
+.header__nav-left .header__nav-left--nitro {
+  text-decoration: none;
+  list-style-type: none;
+}
+.header__nav-right .header__nav-right__lists {
+  flex-direction: row;
+  width: 20vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+}
+.header__nav-right .header__nav-right__lists a {
+  text-decoration: none;
+  color: #393939;
+}
+.header__nav-right .header__nav-right__text-blue a {
+  color: #5bacc3;
+}
+
+/* ---------------------------------Main----------------------------- */
+.menu-top {
+  height: 40vh;
+  background-image: url("/assets/coffee-circle.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-top__menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu-top__menu-text {
+  z-index: 10;
+  color: #5bacc3;
+  border: 0.3125rem solid #5bacc3;
+}
+.menu-top__menu-text h1 {
+  color: #fff;
+  padding: 3.6rem;
+}
+.menu-top__menu-img-background {
+  position: absolute;
+  background-color: #393939;
+  width: 18.75rem;
+  height: 12.5rem;
+  z-index: 1;
+  top: 1rem;
+  left: 1rem;
+}
+
+.menu-mid {
+  text-align: center;
+  background-color: #393939;
+  padding: 0.25rem;
+}
+.menu-mid ul,
+.menu-mid a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+.menu-mid b {
+  color: #5bacc3;
+}
+
+.menu-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff0ed;
+}
+.menu-bottom h2 {
+  margin: 1.25rem;
+}
+.menu-bottom h3,
+.menu-bottom p {
+  margin: 0;
+  padding-top: 0.75rem;
+}
+.menu-bottom__item1, .menu-bottom__item2, .menu-bottom__item3 {
+  padding-bottom: 2.25rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.menu-bottom__item2 {
+  background-color: #f7f7f7;
+}
+.menu-bottom__item1-info, .menu-bottom__item2-info, .menu-bottom__item3-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 2rem;
+}
+.menu-bottom__item1-info-rate, .menu-bottom__item2-info-rate, .menu-bottom__item3-info-rate {
+  color: #5bacc3;
+}/*# sourceMappingURL=menu.css.map */

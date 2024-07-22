@@ -1,0 +1,68 @@
+@use './variables' as *;
+
+
+
+
+@mixin header-nav-bar {
+	@include flex-space-between;
+	padding: 1.2rem 1rem 0 1rem;
+	background-color: $primary-color2;	
+}
+
+@mixin header-nav-left {
+	@include flex-space-around;
+	flex-direction: row;
+	width: 12vw;
+
+	.header__nav-left--nitro {
+		text-decoration: none;
+		list-style-type: none;
+	}
+}
+
+@mixin header-nav-right {
+	.header__nav-right__lists {
+		flex-direction: row;
+		width: 20vw;
+		@include flex-space-between;
+		list-style-type: none;
+
+		a {
+			text-decoration: none;
+			color: $neutral-color1;
+		}
+	}
+
+	.header__nav-right__text-blue {
+		a {
+			color: $primary-color1;
+		}
+	}
+}
+
+
+
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-space-around {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+@mixin flex-space-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@mixin flex-space-evenly {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}

@@ -1,0 +1,118 @@
+@use './partials/mixins' as *;
+@use './partials/variables' as *;
+
+.header__nav {
+    &__bar {
+        @include header-nav-bar;
+    }
+
+    &-left {
+        @include header-nav-left;
+    }
+
+    &-right {
+        @include header-nav-right;
+    }
+}
+
+/* ---------------------------------Main----------------------------- */
+
+.menu-top {
+    height: 40vh;
+    background-image: url("/assets/coffee-circle.jpg");
+    background-size: cover;  
+    background-position: center;
+
+    @include flex-center;
+
+    &__menu {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-text {
+            z-index: 10;
+            color: $primary-color1;
+            border: .3125rem solid $primary-color1;
+
+            h1 {
+                color: $neutral-color4;
+                padding: 3.6rem;
+            }
+        }
+
+        &-img-background {
+            position: absolute;
+            background-color: $neutral-color1;
+            width: 18.75rem;
+            height: 12.5rem;
+            z-index: 1;
+            top: 1rem;
+            left: 1rem;
+        }
+    }
+}
+
+.menu-mid {
+    text-align: center;
+    background-color: $neutral-color1;
+    padding: 0.25rem;
+
+    ul,
+    a {
+        @include flex-center;
+        gap: 1.2rem;
+        list-style-type: none;
+        text-decoration: none;
+        color: $neutral-color4;
+    }
+
+    b {
+        color: $primary-color1;
+    }
+}
+
+.menu-bottom {
+    @include flex-center;
+    flex-direction: column;
+    text-align: center;
+    background-color: $primary-color2;
+
+    h2 {
+        margin: 1.25rem;
+    }
+
+    h3,
+    p {
+        margin: 0;
+        padding-top: 0.75rem;
+    }
+
+    &__item1,
+    &__item2,
+    &__item3 {
+        padding-bottom: 2.25rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    &__item2 {
+        background-color: $neutral-color3;
+    }
+
+    &__item1-info,
+    &__item2-info,
+    &__item3-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 2rem;
+    }
+
+    &__item1-info-rate,
+    &__item2-info-rate,
+    &__item3-info-rate {
+        color: $primary-color1;
+    }
+}
